@@ -71,8 +71,8 @@ const LoginRegisterScreen = () => {
 
     return (
         <View style={styles.container}>
-            <KeyboardAvoidingView behavior="padding" style={styles.avoidingView}>
-                <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+            <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+                <KeyboardAvoidingView behavior="padding" style={styles.avoidingView}>
 
 
                     <View style={styles.formContainer}>
@@ -203,8 +203,8 @@ const LoginRegisterScreen = () => {
                             </Animated.View>
                         )}
                     </View>
-                </TouchableWithoutFeedback>
-            </KeyboardAvoidingView>
+                </KeyboardAvoidingView>
+            </TouchableWithoutFeedback>
         </View>
     );
 };
