@@ -1,27 +1,36 @@
 
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-
+HOW TO RUN:
 ## Get started
-
 1. Install dependencies
-
    ```bash
    npm install
    ```
-
 2. Start the app
-
    ```bash
     npx expo start
    ```
-
 In the output, you'll find options to open the app in a
 - [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 - [web browser]
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)
 - [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
 - [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+
+  
+DESIGN CHOICES MADE:
+- Decided to keep it clean, with a dark purple theme. 
+- Smooth and simple animations to switch from login to sign up and vice versa.
+- The form moves up when an input field is activated to avoid the keyboard for better UX. 
+- Input field requirement error texts pop up on touch and lack of fulfillment on submit. 
+- Error texts go away on form toggle.
+
+LIMITATIONS/ASSUMPTIONS:
+- Inconsistency in showing error for Name input field. Most likely a Formik validation detecting null ("") as a valid input. Does not affect touch error detection though, therefore that works fine.
+- Assumed separated backend, therefore redirected to a post-login/post-register screen with success-messages upon submit.
+
+
 
 Demo video:
 
