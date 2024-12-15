@@ -27,7 +27,7 @@ In the output, you'll find options to open the app in a
 - Input field requirement error texts pop up on touch and lack of fulfillment on submit. 
 - Error texts go away on form toggle.
 
-##LIMITATIONS/ASSUMPTIONS:
+## LIMITATIONS/ASSUMPTIONS:
 - Inconsistency in showing error for Name input field. Most likely a Formik validation detecting null ("") as a valid input. Does not affect touch error detection though, therefore that works fine.
 - Assumed separated backend, therefore redirected to a post-login/post-register screen with success-messages upon submit.
 
