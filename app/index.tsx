@@ -76,7 +76,7 @@ const LoginRegisterScreen = () => {
 
 
                     <View style={styles.formContainer}>
-                        <StatusBar backgroundColor="black" translucent={true} />
+                        <StatusBar backgroundColor="#050625" translucent={true} />
                         {successMessage ? (
                             <View style={styles.successBox}>
                                 <Text style={styles.successText}>{successMessage}</Text>
